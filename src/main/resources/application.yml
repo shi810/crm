@@ -8,11 +8,11 @@ server:
 ## 数据源配置
 spring:
   datasource:
-    type: com.mchange.v2.c3p0.debug.AfterCloseLoggingComboPooledDataSource
+    type: com.mchange.v2.c3p0.ComboPooledDataSource
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/crm01?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8
     username: root
-    password: root
+    password: 123456
 
   ## freemarker
   freemarker:

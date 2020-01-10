@@ -12,7 +12,7 @@
         </commentGenerator>
         <!--数据库链接地址账号密码-->
         <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://127.0.0.1:3306/crm01"
-                        userId="root" password="root">
+                        userId="root" password="123456">
         </jdbcConnection>
 
 
@@ -23,20 +23,20 @@
 
 
         <!--生成Model类存放位置-->
-        <javaModelGenerator targetPackage="com.shsxt.crm.vo" targetProject="C:\java\idea_33\shsxt_crm\src\main\java">
+        <javaModelGenerator targetPackage="com.shsxt.crm.vo" targetProject="D:\myWorkCode\JavaCode\crm_project\src\main\java">
             <property name="enableSubPackages" value="true"/>
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
 
 
         <!--生成映射文件存放位置-->
-        <sqlMapGenerator targetPackage="mappers" targetProject="C:\java\idea_33\shsxt_crm\src\main\resources">
+        <sqlMapGenerator targetPackage="mappers" targetProject="D:\myWorkCode\JavaCode\crm_project\src\main\resources">
             <property name="enableSubPackages" value="true"/>
         </sqlMapGenerator>
 
 
         <!--生成Dao类存放位置-->
-        <javaClientGenerator type="XMLMAPPER" targetPackage="com.shsxt.crm.dao" targetProject="C:\java\idea_33\shsxt_crm\src\main\java">
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.shsxt.crm.dao" targetProject="D:\myWorkCode\JavaCode\crm_project\src\main\java">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
 

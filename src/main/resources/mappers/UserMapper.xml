@@ -16,10 +16,18 @@
     id, user_name, user_pwd, true_name, email, phone, is_valid, create_date, update_date
   </sql>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
-    select 
+    select
     <include refid="Base_Column_List" />
     from t_user
     where id = #{id,jdbcType=INTEGER}
+  </select>
+
+
+
+  <select id="queryUserByUserName" parameterType="string" resultType="com.shsxt.crm.vo.User">
+    select <include refid="Base_Column_List"/>
+    from t_user
+    where is_valid=1 and user_name=#{userName}
   </select>
   <insert id="insertSelective" parameterType="com.shsxt.crm.vo.User" >
     insert into t_user

@@ -59,7 +59,7 @@ function isNull (targetObj) {
 }
 
 function isEmpty(targetStr) {
-	if (isNull(targetStr) || targetStr.length < 1) {
+	if (isNull(targetStr) || targetStr.trim().length < 1) {
 		return true;
 	} else {
 		return false;
